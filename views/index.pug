@@ -6,6 +6,7 @@ html(lang="fr")
     link(rel="stylesheet" href="swiper/swiper.min.css")
     title Gotham
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+    //- link(href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet")
     // script(type="text/javascript" src="swiper/swiper.esm.js")
   body
     .swiper-container
@@ -13,5 +14,20 @@ html(lang="fr")
         .swiper-slide(data-ref="1") slide 1
         .swiper-slide(data-ref="2") slide 2
         .swiper-slide(data-ref="3") slide 3
+      .swiper-pagination
+      .swiper-button-next
+        ion-icon(name="md-arrow-forward")
+      .swiper-button-prev
+        ion-icon(name="md-arrow-back")
+      .swiper-bg-menu
+        svg(width="39px" height="27px" viewBox="0 0 39 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            title md-menu
+            desc Created with Sketch.
+            g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+                g(id="Frame-2" transform="translate(-181.000000, -961.000000)" fill="#272727" fill-rule="nonzero")
+                    g(id="Navbar" transform="translate(36.000000, 953.000000)")
+                        g(id="md-menu" transform="translate(145.000000, 8.000000)")
+                            path(d="M0,26.6667344 L39,26.6667344 L39,21.6667344 L0,21.6667344 L0,26.6667344 Z M0,15.8333672 L39,15.8333672 L39,10.8333672 L0,10.8333672 L0,15.8333672 Z M0,0 L0,5 L39,5 L39,0 L0,0 Z" id="Shape")
+    script(src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js")
     script(type="text/javascript" src="swiper/swiper.min.js")
     script(type="text/javascript" src="js/index.js")

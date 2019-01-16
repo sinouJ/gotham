@@ -1,17 +1,62 @@
 .swiper-container {
+  overflow: hidden;
+  
   .swiper-wrapper {
+
     .swiper-slide {
       height: 100vh;
 
-      &[data-ref="1"] {
-        background-color: blue;
+      // &[data-ref="1"] {
+      //   background-color: blue;
+      // }
+      // &[data-ref="2"] {
+      //   background-color: red;
+      // }
+      // &[data-ref="3"] {
+      //   background-color: yellow;
+      // }
+    }
+  }
+
+  .swiper-pagination {
+    &-progressbar {
+      height: 5px !important;
+      top: auto !important;
+      bottom: 50px;
+      width: 65% !important;
+      margin: 0 auto;
+      right: 0;
+      background-color: $extralightgrey;
+
+      .swiper-pagination-progressbar-fill {
+        background-color: $black;
       }
-      &[data-ref="2"] {
-        background-color: red;
-      }
-      &[data-ref="3"] {
-        background-color: yellow;
-      }
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    width: 35px !important;
+    // background: transparent !important;
+    background: $white !important;
+    top: auto !important;
+    bottom: 33px;
+
+    ion-icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .swiper-bg-menu {
+    width: 35px;
+    height: 44px;
+    position: absolute;
+    bottom: 33px;
+    left: 80px;
+
+    ion-icon {
+      width: 100%;
+      height: 100%;
     }
   }
 }

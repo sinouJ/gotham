@@ -13,6 +13,13 @@ $fzXXXXL: 60px;
 
 /**** COLORS *****/
 
+$white: #ffffff;
+$black: #212121;
+$extralightgrey: #f1f1f1;
+$lightgrey: #c3c3c3;
+$blue: #323593;
+$red: #ed1c24;
+
 /**** Pixels *****/
 
 $pxXS: 5px;
@@ -28,3 +35,7 @@ $pxL: 40px;
 $small: 600px;
 $medium: 992px;
 $large:1200px;
+
+/** shadow **/
+
+$shadow: 0 0 9px 6px rgba(0, 0, 0, 0.15);
