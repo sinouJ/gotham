@@ -1,0 +1,17 @@
+.swiper-container {
+  .swiper-wrapper {
+    .swiper-slide {
+      height: 100vh;
+
+      &[data-ref="1"] {
+        background-color: blue;
+      }
+      &[data-ref="2"] {
+        background-color: red;
+      }
+      &[data-ref="3"] {
+        background-color: yellow;
+      }
+    }
+  }
+}

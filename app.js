@@ -17,5 +17,5 @@ app.use('/', index);
 // const adminRoutes = require('./routes/admin');
 // app.use('/admin', adminRoutes)
 
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 3300;
 app.listen(port, () => console.log(`Serveur lancé sur le port ${port}`));

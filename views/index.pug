@@ -6,11 +6,12 @@ html(lang="fr")
     link(rel="stylesheet" href="swiper/swiper.min.css")
     title Gotham
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
-    script(type="text/javascript" src="swiper/swiper.min.js")  
-    script(type="text/javascript" src="swiper/swiper.esm.js")
+    // script(type="text/javascript" src="swiper/swiper.esm.js")
   body
     .swiper-container
       .swiper-wrapper
-        .swiper-slide slide 1
-        .swiper-slide slide 2
+        .swiper-slide(data-ref="1") slide 1
+        .swiper-slide(data-ref="2") slide 2
+        .swiper-slide(data-ref="3") slide 3
+    script(type="text/javascript" src="swiper/swiper.min.js")
     script(type="text/javascript" src="js/index.js")
