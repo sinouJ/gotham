@@ -1,0 +1,94 @@
+@import "variables";
+
+$nb_col: 12;
+
+.col {
+  @for $i from 1 through $nb_col{
+    .s#{$i} {
+      width: (100% / $nb_col) * $i;
+      float: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  }
+
+  @for $i from 1 through $nb_col{
+    .offset_s#{$i} {
+      margin-left: (100% / $nb_col) * $i !important;
+    }
+  }
+  @media (min-width: $small) {
+    @for $i from 1 through $nb_col{
+      .m#{$i} {
+        width: (100% / $nb_col) * $i;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+    }
+
+    @for $i from 1 through $nb_col{
+      .offset_m#{$i} {
+        margin-left: (100% / $nb_col) * $i !important;
+      }
+    }
+  }
+
+
+  @media (min-width: $medium) {
+    @for $i from 1 through $nb_col{
+      .l#{$i} {
+        width: (100% / $nb_col) * $i;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+    }
+
+    @for $i from 1 through $nb_col{
+      .offset_l#{$i} {
+        margin-left: (100% / $nb_col) * $i !important;
+      }
+    }
+  }
+
+  @media (min-width: $large) {
+    @for $i from 1 through $nb_col{
+      .xl#{$i} {
+        width: (100% / $nb_col) * $i;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+    }
+
+    @for $i from 1 through $nb_col{
+      .offset_xl#{$i} {
+        margin-left: (100% / $nb_col) * $i !important;
+      }
+    }
+  }
+}
+
+.container{
+  width: 85%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &::after{
+    content: "";
+    clear: both;
+  }
+}
