@@ -44,7 +44,7 @@ gulp.task('watch', function () {
   browserSync.init({
     open: false,
     // browser: "google chrome",
-    proxy: "localhost:3000"
+    proxy: "localhost:3300"
   });
 
   gulp.watch(sass_dir+'/**/*.scss', ['sass']);

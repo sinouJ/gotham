@@ -1,0 +1,8 @@
+.valign-wrapper {
+  display: flex;
+  align-items: center;
+
+  &.centered {
+    justify-content: center;
+  }
+}

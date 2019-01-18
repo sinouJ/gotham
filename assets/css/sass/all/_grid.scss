@@ -4,7 +4,7 @@ $nb_col: 12;
 
 .col {
   @for $i from 1 through $nb_col{
-    .s#{$i} {
+    &.s#{$i} {
       width: (100% / $nb_col) * $i;
       float: left;
       padding-left: 20px;
@@ -14,13 +14,13 @@ $nb_col: 12;
   }
 
   @for $i from 1 through $nb_col{
-    .offset_s#{$i} {
+    &.offset_s#{$i} {
       margin-left: (100% / $nb_col) * $i !important;
     }
   }
   @media (min-width: $small) {
     @for $i from 1 through $nb_col{
-      .m#{$i} {
+      &.m#{$i} {
         width: (100% / $nb_col) * $i;
         float: left;
         padding-left: 20px;
@@ -30,7 +30,7 @@ $nb_col: 12;
     }
 
     @for $i from 1 through $nb_col{
-      .offset_m#{$i} {
+      &.offset_m#{$i} {
         margin-left: (100% / $nb_col) * $i !important;
       }
     }
@@ -39,7 +39,7 @@ $nb_col: 12;
 
   @media (min-width: $medium) {
     @for $i from 1 through $nb_col{
-      .l#{$i} {
+      &.l#{$i} {
         width: (100% / $nb_col) * $i;
         float: left;
         padding-left: 20px;
@@ -49,7 +49,7 @@ $nb_col: 12;
     }
 
     @for $i from 1 through $nb_col{
-      .offset_l#{$i} {
+      &.offset_l#{$i} {
         margin-left: (100% / $nb_col) * $i !important;
       }
     }
@@ -57,7 +57,7 @@ $nb_col: 12;
 
   @media (min-width: $large) {
     @for $i from 1 through $nb_col{
-      .xl#{$i} {
+      &.xl#{$i} {
         width: (100% / $nb_col) * $i;
         float: left;
         padding-left: 20px;
@@ -67,7 +67,7 @@ $nb_col: 12;
     }
 
     @for $i from 1 through $nb_col{
-      .offset_xl#{$i} {
+      &.offset_xl#{$i} {
         margin-left: (100% / $nb_col) * $i !important;
       }
     }

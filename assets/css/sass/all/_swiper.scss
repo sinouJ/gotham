@@ -1,6 +1,6 @@
 .swiper-container {
   overflow: hidden;
-  
+
   .swiper-wrapper {
 
     .swiper-slide {
@@ -22,10 +22,11 @@
     &-progressbar {
       height: 5px !important;
       top: auto !important;
-      bottom: 50px;
-      width: 65% !important;
-      margin: 0 auto;
-      right: 0;
+      bottom: 42px;
+      width: 55% !important;
+      // margin: 0 auto;
+      left: 30% !important;
+      // right: 0;
       background-color: $extralightgrey;
 
       .swiper-pagination-progressbar-fill {
@@ -39,7 +40,7 @@
     // background: transparent !important;
     background: $white !important;
     top: auto !important;
-    bottom: 33px;
+    bottom: 23px;
 
     ion-icon {
       width: 100%;
@@ -51,12 +52,73 @@
     width: 35px;
     height: 44px;
     position: absolute;
-    bottom: 33px;
-    left: 80px;
+    bottom: 12px;
+    left: 143px;
+    z-index: 22;
+    cursor: pointer;
 
-    ion-icon {
+    span {
+      display: block;
       width: 100%;
-      height: 100%;
+      height: 4px;
+      background-color: $black;
+      transition: all 0.5s ease;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &[data-name='cross'] {
+      span {
+        &:last-of-type {
+          display: none;
+        }
+        &:nth-child(1n) {
+          transform: rotate(-45deg);
+          position: absolute;
+          bottom: 35px;
+        }
+        &:nth-child(2n) {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .numerotation {
+    position: absolute;
+    right: 72%;
+    bottom: 36px;
+    z-index: 10;
+  }
+
+  .swiper-page-menu {
+    position: absolute;
+    bottom: -20px;
+    left: 85px;
+    background-color: $white;
+    box-shadow: $shadow;
+    height: auto;
+    padding: 15px 50px 75px 50px;
+    z-index: 21;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+
+    &[data-stat='open'] {
+      bottom: 17px;
+      opacity: 1;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 5px;
+      padding: 2px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
