@@ -14,7 +14,7 @@ $nb_col: 12;
   }
 
   @for $i from 1 through $nb_col{
-    &.offset_s#{$i} {
+    &.offset-s#{$i} {
       margin-left: (100% / $nb_col) * $i !important;
     }
   }
@@ -30,7 +30,7 @@ $nb_col: 12;
     }
 
     @for $i from 1 through $nb_col{
-      &.offset_m#{$i} {
+      &.offset-m#{$i} {
         margin-left: (100% / $nb_col) * $i !important;
       }
     }
@@ -49,7 +49,7 @@ $nb_col: 12;
     }
 
     @for $i from 1 through $nb_col{
-      &.offset_l#{$i} {
+      &.offset-l#{$i} {
         margin-left: (100% / $nb_col) * $i !important;
       }
     }
@@ -67,7 +67,7 @@ $nb_col: 12;
     }
 
     @for $i from 1 through $nb_col{
-      &.offset_xl#{$i} {
+      &.offset-xl#{$i} {
         margin-left: (100% / $nb_col) * $i !important;
       }
     }

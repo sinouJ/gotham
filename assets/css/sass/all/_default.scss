@@ -1,4 +1,5 @@
 @import "variables";
+@import "fonts";
 // body {
 //   &.disabled {
 //     &::after {
@@ -11,6 +12,9 @@
 //     }
 //   }
 // }
+* {
+  font-family: 'Gotham-Book';
+}
 a {
   color: $black;
 }
