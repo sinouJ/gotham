@@ -1,0 +1,33 @@
+[data-ref="1"] {
+  >.row {
+    z-index: 1;
+  }
+  .typetest {
+    position: relative;
+    text-decoration: underline;
+
+    ion-icon {
+      position: absolute;
+      top: 0;bottom: 0;
+      margin: auto 0;
+    }
+  }
+  img {
+    position: absolute;
+
+    &[data-num="1"] {
+      top: 20%;
+      right: 0;
+      width: 90%;
+    }
+    &[data-num="2"] {
+      width: 350px;
+      top: 38%;
+      right: 40px;
+    }
+    &[data-num="3"] {
+      bottom: 25%;
+      right: 70px;
+    }
+  }
+}
