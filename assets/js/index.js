@@ -39,3 +39,8 @@ function toggleMenu() {
     menuCrossElt.setAttribute('data-name', 'menu');
   }
 }
+function goTo(elt) {
+  var pageDest = elt.getAttribute('data-num');
+  swiper.slideTo(pageDest - 1);
+  toggleMenu();
+}
