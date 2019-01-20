@@ -12,14 +12,22 @@
       margin: auto 0;
     }
   }
+  h1 {
+    position: absolute;
+    width: 90%;
+    height: 130px;
+    top: 13%;
+    right: 0;
+
+    img {
+      &[data-num="1"] {
+        width: 100%;
+      }
+    }
+  }
   img {
     position: absolute;
 
-    &[data-num="1"] {
-      top: 20%;
-      right: 0;
-      width: 90%;
-    }
     &[data-num="2"] {
       width: 350px;
       top: 38%;
@@ -28,6 +36,17 @@
     &[data-num="3"] {
       bottom: 25%;
       right: 70px;
+    }
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 22px;
+
+    &.mB30 {
+      margin-bottom: 30px;
+    }
+    &.mB45 {
+      margin-bottom: 45px
     }
   }
 }
