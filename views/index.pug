@@ -15,7 +15,7 @@ html(lang="fr")
           include slides/slide_1
         .swiper-slide.valign-wrapper.centered(data-ref="2") slide 2
         .swiper-slide.valign-wrapper.centered(data-ref="3") slide 3
-        .swiper-slide.valign-wrapper.centered(data-ref="4") slide 4
+        .swiper-slide.valign-wrapper.centered(data-ref="4")
           include slides/slide_4
         .swiper-slide.valign-wrapper.centered(data-ref="5") slide 5
         .swiper-slide.valign-wrapper.centered(data-ref="6") slide 6
@@ -33,9 +33,10 @@ html(lang="fr")
       .swiper-page-menu(data-stat='close')
         - var n = 1
         ul
-        while n < 7
-          li
-            a(href="#", onclick="goTo(this);", data-num= n)= 'Page '+ n++
+          while n < 7
+            li
+              a(href="#", onclick="goTo(this);", data-num= n)= 'Page '+ n++
     script(src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js")
     script(type="text/javascript" src="swiper/swiper.min.js")
     script(type="text/javascript" src="js/index.js")
+    script(type="text/javascript" src="js/timeLineSlide4.js")

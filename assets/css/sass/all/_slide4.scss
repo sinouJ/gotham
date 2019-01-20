@@ -1,0 +1,12 @@
+[data-ref="4"] {
+  svg {
+    max-width: 100%;
+
+    @for $i from 1 through 8 {
+      #line#{$i} {
+        transition: opacity 0.8s ease;
+        opacity: 0;
+      }
+    }
+  }
+}
