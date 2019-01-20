@@ -42,8 +42,8 @@ gulp.task('compress', function (cb) {
 // WATCH
 gulp.task('watch', function () {
   browserSync.init({
-    open: false,
-    // browser: "google chrome",
+    open: true,
+    browser: "google chrome",
     proxy: "localhost:3300"
   });
 
