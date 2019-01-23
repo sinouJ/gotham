@@ -10,6 +10,8 @@ var swiper = new Swiper('.swiper-container', {
     transitionEnd: function () {
       var pageActive = document.querySelector('.swiper-slide-active').getAttribute('data-ref');
       document.querySelector('.numerotation').innerHTML = '<p>'+pageActive+' of 6</p>';
+    },
+    transitionStart: function() {
       var slide = document.querySelector('.swiper-slide-active');
       if (slide.getAttribute('data-ref') == '4') {
         document.getElementById('line1').style.opacity = '1';
@@ -45,6 +47,15 @@ var swiper = new Swiper('.swiper-container', {
         document.getElementById('line7').style.opacity = '0';
         document.getElementById('line8').style.opacity = '0';
       }
+      if (slide.getAttribute('data-ref') == '3') {
+        var getUl = document.getElementById('listGeo');
+        var getLi = getUl.querySelectorAll('li');
+        // for (let i = 0; i < getLi.length; i++) {
+        //   setTimeout(function() {
+        //     getLi[i].style.marginLeft = '0';
+        //   } i*20);
+        // }
+      }
     }
   },
   navigation: {
@@ -54,7 +65,7 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true
   },
-  // initialSlide: 3
+  initialSlide: 1
 });
 function toggleMenu() {
   var menuCrossElt = document.querySelector('.swiper-bg-menu');
@@ -81,5 +92,42 @@ function goTo(elt) {
   swiper.slideTo(pageDest - 1);
   if (elt.parentNode.parentNode.parentNode == ifMenu ) {
     toggleMenu();
+  }
+}
+function geometricHover(elt, color, newWidth, newHeight, axisX, axisY) {
+  var target = elt.getAttribute('data-num');
+  var svgId = document.getElementById(target);
+  svgId.setAttribute('fill', color);
+  if (newWidth != undefined) {
+    if (newWidth == 0) {
+      false
+    }
+    else {
+      svgId.setAttribute('width', newWidth);
+    }
+  }
+  if (newHeight != undefined) {
+    if (newHeight == 0) {
+      false
+    }
+    else {
+      svgId.setAttribute('height', newHeight);
+    }
+  }
+  if (axisX != undefined) {
+    if (axisX == 0) {
+      false
+    }
+    else {
+      svgId.setAttribute('x', axisX);
+    }
+  }
+  if (axisY != undefined) {
+    if (axisY == 0) {
+      false
+    }
+    else {
+      svgId.setAttribute('y', axisY);
+    }
   }
 }

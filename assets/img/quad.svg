@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="175px" viewBox="0 0 316 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>quadrillage copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="3329.9676%" cy="50.0000001%" fx="3329.9676%" fy="50.0000001%" r="11911.39%" gradientTransform="translate(33.299676,0.500000),scale(1.000000,0.006079),rotate(90.000000),translate(-33.299676,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#6C6B6B" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="86.9513186%"></stop>
+        </radialGradient>
+        <radialGradient cx="-3404.17314%" cy="51.1801%" fx="-3404.17314%" fy="51.1801%" r="16448.355%" gradientTransform="translate(-34.041731,0.511801),scale(1.000000,0.006079),rotate(90.000000),translate(34.041731,-0.511801)" id="radialGradient-2">
+            <stop stop-color="#6C6B6B" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="75.3612717%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="-1.55431223e-12%" fx="50%" fy="-1.55431223e-12%" r="8360.97255%" gradientTransform="translate(0.500000,-0.000000),scale(0.006079,1.000000),translate(-0.500000,0.000000)" id="radialGradient-3">
+            <stop stop-color="#6C6B6B" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="-3.66373598e-13%" fx="50%" fy="-3.66373598e-13%" r="16448.355%" gradientTransform="translate(0.500000,-0.000000),scale(0.006079,1.000000),translate(-0.500000,0.000000)" id="radialGradient-4">
+            <stop stop-color="#6C6B6B" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="64.5321532%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Frame-3" transform="translate(-818.000000, -299.000000)">
+            <g id="quadrillage" transform="translate(818.000000, 299.000000)">
+                <g>
+                    <rect id="Rectangle" fill="url(#radialGradient-1)" x="106.613982" y="0" width="1.92097264" height="316"></rect>
+                    <rect id="Rectangle-Copy" fill="url(#radialGradient-2)" x="209.386018" y="0" width="1.92097264" height="316"></rect>
+                    <rect id="Rectangle" fill="url(#radialGradient-3)" x="0" y="104.693009" width="316" height="1.92097264"></rect>
+                    <rect id="Rectangle-Copy-2" fill="url(#radialGradient-4)" x="0" y="208.425532" width="316" height="1.92097264"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

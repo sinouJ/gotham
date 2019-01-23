@@ -1,0 +1,46 @@
+[data-ref="3"] {
+  align-items: flex-start;
+  ul {
+    margin-top: 20%;
+    li {
+      transition: margin 0.5s ease;
+      margin-left: 200px;
+      p{
+        font-size: 0.9rem;
+
+        a{
+          padding: 20px 0;
+          width: 100%;
+          display: block;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  svg {
+    max-width: 100%;
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+    rect {
+      transition: all 0.3s ease;
+    }
+  }
+  img {
+    position: absolute;
+
+    &[data-num="0"] {
+      bottom: calc(10% + 175px);
+      right: 0;
+    }
+    &[data-num="1"] {
+      top: 0;
+      left: 0;
+    }
+    &[data-num="2"] {
+      top: 0;
+      right: 0;
+    }
+  }
+}
