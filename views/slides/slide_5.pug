@@ -1,0 +1,11 @@
+.row.nm
+  - var grp1 = ['Twitter', 'Moonlight Movie Poster', 'Arte Magazin', 'James Bond Spectre Movie Poster', 'Obama 2008'];
+  - var grp2 = ['Starbucks Coffee', 'Netflix', 'Spotify', 'Manchester City Football Club', 'GQ Magazine'];
+  ul
+    each i, index in grp1
+      li.grp1
+        a(href="#", data-num= index)= i
+  ul
+    each i, index in grp2
+      li.grp2
+        a(href="#", data-num= index)= i

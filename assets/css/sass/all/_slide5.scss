@@ -1,0 +1,28 @@
+[data-ref="5"] {
+  >.row {
+    position: relative;
+    min-height: 40vh;
+    ul {
+
+      li {
+        position: absolute;
+        &.grp1 {
+          text-align: right;
+          right: 51%;
+        }
+        &.grp2 {
+          text-align: left;
+          left: 51%;
+        }
+
+        a {
+          font-family: Gotham-Bold;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
