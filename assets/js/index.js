@@ -70,7 +70,7 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true
   },
-  initialSlide: 2
+  initialSlide: 5
 });
 function toggleMenu() {
   var menuCrossElt = document.querySelector('.swiper-bg-menu');

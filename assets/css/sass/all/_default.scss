@@ -1,17 +1,5 @@
 @import "variables";
 @import "fonts";
-// body {
-//   &.disabled {
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       top: 0;right: 0;bottom: 0;left: 0;
-//       z-index: 20;
-//       background-color: $black;
-//       opacity: 0.6;
-//     }
-//   }
-// }
 * {
   font-family: 'Gotham-Book';
 }
@@ -21,5 +9,28 @@ a {
 ul {
   li {
     list-style: none;
+
+    input {
+      outline: none;
+      &[type="text"] {
+        border-radius: 0;
+        border: none;
+        border-bottom: 3px solid $black;
+        padding: 3px;
+        font-size: 1.1rem;
+      }
+    }
   }
+}
+textarea {
+  resize: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 3px solid $black;
+  width: 100%;
+  font-size: 1.1rem;
+  outline: none;
+  background-color: $extralightgrey;
+  padding: 10px;
+  height: 350px;
 }

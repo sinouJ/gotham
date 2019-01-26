@@ -1,0 +1,22 @@
+.row.title
+  .col.s12.valign-wrapper.centered
+    img(src="img/typetester.svg")
+.row.wrapper
+  .col.s12
+    .row.nm
+      .col.s8.offset-s2
+        ul.valign-wrapper
+          li
+            input(type="text" maxlength="5" value="18")
+          li.dropdown Book
+            ul.family
+              - var fonts = ['Thin', 'XLight', 'Light', 'Book', 'Medium', 'Bold', 'Black', 'Ultra'];
+              each font in fonts
+                li
+                  input(type="radio", name="family", id= font)
+                  label(for= font) #{font}
+          li
+            input(type="text" maxlength="6" value="212121")
+    .row
+      .col.s8.offset-s2.np.typetester
+        textarea
