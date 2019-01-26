@@ -8,8 +8,12 @@ var swiper = new Swiper('.swiper-container', {
   },
   on: {
     transitionEnd: function () {
+      var slide = document.querySelector('.swiper-slide-active');
       var pageActive = document.querySelector('.swiper-slide-active').getAttribute('data-ref');
       document.querySelector('.numerotation').innerHTML = '<p>'+pageActive+' of 6</p>';
+      if (slide.getAttribute('data-ref') == '5') {
+        organizeItems();
+      };
     },
     transitionStart: function() {
       var slide = document.querySelector('.swiper-slide-active');
@@ -23,19 +27,19 @@ var swiper = new Swiper('.swiper-container', {
         }, 400);
         setTimeout(function() {
           document.getElementById('line4').style.opacity = '1';
-        }, 600);
+        }, 550);
         setTimeout(function() {
           document.getElementById('line5').style.opacity = '1';
-        }, 800);
+        }, 700);
         setTimeout(function() {
           document.getElementById('line6').style.opacity = '1';
-        }, 1000);
+        }, 800);
         setTimeout(function() {
           document.getElementById('line7').style.opacity = '1';
-        }, 1200);
+        }, 850);
         setTimeout(function() {
           document.getElementById('line8').style.opacity = '1';
-        }, 1400);
+        }, 880);
       }
       else {
         document.getElementById('line1').style.opacity = '0';
@@ -129,5 +133,15 @@ function geometricHover(elt, color, newWidth, newHeight, axisX, axisY) {
     else {
       svgId.setAttribute('y', axisY);
     }
+  }
+}
+function organizeItems() {
+  var list = document.querySelectorAll('.grp1');
+  var list2 = document.querySelectorAll('.grp2');
+  for (var i = 0; i < list.length; i++) {
+    list[i].querySelector('a').parentNode.style.top = i*50+'px';
+  }
+  for (var i = 0; i < list2.length; i++) {
+    list2[i].querySelector('a').parentNode.style.top = i*50+'px';
   }
 }

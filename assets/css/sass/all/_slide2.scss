@@ -1,0 +1,30 @@
+[data-ref="2"] {
+  .row {
+    &.title {
+      position: absolute;
+      top: 10%;left: 0;
+    }
+
+    &.tower {
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+
+      .col {
+        height: 50vh;
+        justify-content: flex-end;
+
+        img {
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.85rem;
+      line-height: 22px;
+      text-indent: 40px;
+    }
+  }
+}
