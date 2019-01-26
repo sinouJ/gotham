@@ -15,8 +15,8 @@
 
         a{
           padding: 20px 0;
-          width: 100%;
-          display: block;
+          // width: 100%;
+          display: inline-block;
           cursor: pointer;
           text-decoration: underline;
           &:hover {
@@ -37,6 +37,7 @@
   }
   img {
     position: absolute;
+    z-index: -1;
 
     &[data-num="0"] {
       bottom: calc(10% + 175px);
