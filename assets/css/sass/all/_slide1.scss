@@ -38,6 +38,28 @@
       right: 70px;
     }
   }
+  &.swiper-slide-active {
+    .row {
+      &.firstP {
+        transform: translateX(0);
+        transition-delay: 0.2s
+      }
+      &.secondP {
+        transform: translateX(0);
+        transition-delay: 0.3s
+      }
+      &.thirdP {
+        transform: translateX(0);
+        transition-delay: 0.37s
+      }
+    }
+  }
+  .row {
+    &.firstP, &.secondP, &.thirdP {
+      transform: translateX(15%);
+      transition: transform 0.7s ease
+    }
+  }
   p {
     font-size: 0.9rem;
     line-height: 22px;
