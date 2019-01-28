@@ -70,7 +70,7 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true
   },
-  initialSlide: 5
+  initialSlide: 1
 });
 function toggleMenu() {
   var menuCrossElt = document.querySelector('.swiper-bg-menu');
@@ -144,5 +144,14 @@ function organizeItems() {
   }
   for (var i = 0; i < list2.length; i++) {
     list2[i].querySelector('a').parentNode.style.top = i*50+'px';
+  }
+}
+function dropdown() {
+  var family = document.querySelector('.family');
+  var dataStat = family.getAttribute('data-stat');
+
+  if (dataStat == 'close') {
+    family.style.visibility = 'visible';
+    family.setAttribute('data-stat', 'open');
   }
 }

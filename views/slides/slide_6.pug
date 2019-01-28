@@ -8,8 +8,8 @@
         ul.valign-wrapper
           li
             input(type="text" maxlength="5" value="18")
-          li.dropdown Book
-            ul.family
+          li(onclick="dropdown();").dropdown Book
+            ul(data-stat="close").family
               - var fonts = ['Thin', 'XLight', 'Light', 'Book', 'Medium', 'Bold', 'Black', 'Ultra'];
               each font in fonts
                 li

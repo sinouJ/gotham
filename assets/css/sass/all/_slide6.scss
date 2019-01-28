@@ -51,6 +51,12 @@
           opacity: 0;
           visibility: hidden;
           // top: 35px;
+
+          &[data-stat="open"] {
+            top: 35px;
+            opacity: 1;
+          }
+
           li {
 
             input {
