@@ -155,6 +155,3 @@ function dropdown() {
     family.setAttribute('data-stat', 'open');
   }
 }
-setTimeout(function(){
-  console.log('une seconde')
-}, 1000);
