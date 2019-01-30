@@ -70,7 +70,7 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true
   },
-  initialSlide: 1
+  initialSlide: 5
 });
 function toggleMenu() {
   var menuCrossElt = document.querySelector('.swiper-bg-menu');
@@ -153,5 +153,28 @@ function dropdown() {
   if (dataStat == 'close') {
     family.style.visibility = 'visible';
     family.setAttribute('data-stat', 'open');
+  }
+  else {
+    family.style.visibility = 'hidden';
+    family.setAttribute('data-stat', 'close');
+  }
+}
+function changeSize(elt) {
+  var sizeValue = elt.value;
+  var verify = elt.getAttribute('class').split(' ').includes('error');
+  console.log(verify)
+  if (isNaN(sizeValue) == false) {
+    document.querySelector('textarea').style.fontSize = sizeValue + 'px';
+
+    if (verify == true) {
+      elt.classList.remove('error');
+      // console.log('ok')
+    }
+    else {
+      console.log('error')
+    }
+  }
+  else {
+    elt.className += ' error'
   }
 }

@@ -7,7 +7,7 @@
       .col.s8.offset-s2
         ul.valign-wrapper
           li
-            input(type="text" maxlength="5" value="18")
+            input(type="tel" onblur="changeSize(this);" maxlength="5" value="18" class="c")
           li(onclick="dropdown();").dropdown Book
             ul(data-stat="close").family
               - var fonts = ['Thin', 'XLight', 'Light', 'Book', 'Medium', 'Bold', 'Black', 'Ultra'];
@@ -19,4 +19,4 @@
             input(type="text" maxlength="6" value="212121")
     .row
       .col.s8.offset-s2.np.typetester
-        textarea
+        textarea(placeholder="Click to try Gotham")

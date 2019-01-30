@@ -12,12 +12,16 @@ ul {
 
     input {
       outline: none;
-      &[type="text"] {
+      &[type="text"], &[type="tel"] {
         border-radius: 0;
         border: none;
         border-bottom: 3px solid $black;
         padding: 3px;
         font-size: 1.1rem;
+
+        &.error {
+          border-bottom-color: $red;
+        }
       }
     }
   }
@@ -30,7 +34,7 @@ textarea {
   width: 100%;
   font-size: 1.1rem;
   outline: none;
-  background-color: $extralightgrey;
+  background-color: $white;
   padding: 10px;
   height: 350px;
 }

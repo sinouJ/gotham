@@ -23,6 +23,8 @@
           align-items: normal;
 
           >li {
+            position: relative;
+            
             &:not(.dropdown) {
               max-width: 120px;
             }
