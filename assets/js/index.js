@@ -70,7 +70,8 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true
   },
-  initialSlide: 5
+  initialSlide: 5,
+  allowTouchMove: false
 });
 function toggleMenu() {
   var menuCrossElt = document.querySelector('.swiper-bg-menu');
@@ -168,10 +169,47 @@ function changeSize(elt) {
     document.querySelector('textarea').style.fontSize = sizeValue + 'px';
 
     if (verify == true) {
-
+      removeClass(elt, 'error')
     }
     else {
-      console.log('error')
+      return
+    }
+  }
+  else {
+    if (verify == true) {
+      return
+    }
+    else {
+      elt.className += ' error'
+    }
+  }
+}
+function removeClass(el, className){
+  el.className = el.className.replace(new RegExp('\\b'+ className+'\\b', 'g'), '');
+}
+function changeFamily(elt) {
+  var title = document.getElementById('thisTitle').querySelector('p');
+
+  if (elt.checked == true) {
+    title.innerHTML = elt.id;
+    dropdown();
+
+    document.querySelector('textarea').style.fontFamily = 'Gotham-'+elt.id;
+  }
+}
+function changeColor(elt) {
+  var colorValue = elt.value;
+  var classArray = elt.getAttribute('class')
+  var verify = classArray.split(' ').includes('error');
+  console.log(verify)
+  if () {
+    document.querySelector('textarea').style.color = colorValue + 'px';
+
+    if (verify == true) {
+      removeClass(elt, 'error')
+    }
+    else {
+      return
     }
   }
   else {
