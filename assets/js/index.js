@@ -161,20 +161,25 @@ function dropdown() {
 }
 function changeSize(elt) {
   var sizeValue = elt.value;
-  var verify = elt.getAttribute('class').split(' ').includes('error');
+  var classArray = elt.getAttribute('class')
+  var verify = classArray.split(' ').includes('error');
   console.log(verify)
   if (isNaN(sizeValue) == false) {
     document.querySelector('textarea').style.fontSize = sizeValue + 'px';
 
     if (verify == true) {
-      elt.classList.remove('error');
-      // console.log('ok')
+
     }
     else {
       console.log('error')
     }
   }
   else {
-    elt.className += ' error'
+    if (verify == true) {
+      return
+    }
+    else {
+      elt.className += ' error'
+    }
   }
 }
