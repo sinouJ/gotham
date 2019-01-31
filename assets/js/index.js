@@ -197,27 +197,27 @@ function changeFamily(elt) {
     document.querySelector('textarea').style.fontFamily = 'Gotham-'+elt.id;
   }
 }
-function changeColor(elt) {
-  var colorValue = elt.value;
-  var classArray = elt.getAttribute('class')
-  var verify = classArray.split(' ').includes('error');
-  console.log(verify)
-  if () {
-    document.querySelector('textarea').style.color = colorValue + 'px';
-
-    if (verify == true) {
-      removeClass(elt, 'error')
-    }
-    else {
-      return
-    }
-  }
-  else {
-    if (verify == true) {
-      return
-    }
-    else {
-      elt.className += ' error'
-    }
-  }
-}
+// function changeColor(elt) {
+//   var colorValue = elt.value;
+//   var classArray = elt.getAttribute('class')
+//   var verify = classArray.split(' ').includes('error');
+//   console.log(verify)
+//   if () {
+//     document.querySelector('textarea').style.color = colorValue + 'px';
+//
+//     if (verify == true) {
+//       removeClass(elt, 'error')
+//     }
+//     else {
+//       return
+//     }
+//   }
+//   else {
+//     if (verify == true) {
+//       return
+//     }
+//     else {
+//       elt.className += ' error'
+//     }
+//   }
+// }
