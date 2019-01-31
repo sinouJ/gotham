@@ -150,21 +150,23 @@ function organizeItems() {
 function dropdown() {
   var family = document.querySelector('.family');
   var dataStat = family.getAttribute('data-stat');
+  var arrow = document.getElementById('arrow');
 
   if (dataStat == 'close') {
     family.style.visibility = 'visible';
     family.setAttribute('data-stat', 'open');
+    arrow.style.transform = 'translateY(-50%) rotate(180deg)'
   }
   else {
     family.style.visibility = 'hidden';
     family.setAttribute('data-stat', 'close');
+    arrow.style.transform = 'translateY(-50%) rotate(0deg)'
   }
 }
 function changeSize(elt) {
   var sizeValue = elt.value;
   var classArray = elt.getAttribute('class')
   var verify = classArray.split(' ').includes('error');
-  console.log(verify)
   if (isNaN(sizeValue) == false) {
     document.querySelector('textarea').style.fontSize = sizeValue + 'px';
 
@@ -192,32 +194,11 @@ function changeFamily(elt) {
 
   if (elt.checked == true) {
     title.innerHTML = elt.id;
-    dropdown();
-
     document.querySelector('textarea').style.fontFamily = 'Gotham-'+elt.id;
+    dropdown();
   }
 }
-// function changeColor(elt) {
-//   var colorValue = elt.value;
-//   var classArray = elt.getAttribute('class')
-//   var verify = classArray.split(' ').includes('error');
-//   console.log(verify)
-//   if () {
-//     document.querySelector('textarea').style.color = colorValue + 'px';
-//
-//     if (verify == true) {
-//       removeClass(elt, 'error')
-//     }
-//     else {
-//       return
-//     }
-//   }
-//   else {
-//     if (verify == true) {
-//       return
-//     }
-//     else {
-//       elt.className += ' error'
-//     }
-//   }
-// }
+function changeColor(elt) {
+  var colorValue = elt.value;
+  document.querySelector('textarea').style.color = '#' + colorValue;
+}

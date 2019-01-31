@@ -7,8 +7,10 @@
       .col.s8.offset-s2
         ul.valign-wrapper
           li
+            img(src="img/px.svg" alt="sigle pixel")
             input(type="tel" onblur="changeSize(this);" maxlength="5" value="18" class="c")
           li( id="thisTitle", onclick="dropdown();").dropdown 
+            ion-icon(name="md-arrow-dropdown", id="arrow")
             p Book
             ul(data-stat="close").family
               - var fonts = ['Thin', 'XLight', 'Light', 'Book', 'Medium', 'Bold', 'Black', 'Ultra'];
@@ -17,7 +19,8 @@
                   input(type="radio", name="family", id= font, onclick="changeFamily(this);")
                   label(for= font) #{font}
           li
-            input(type="text" maxlength="6" value="212121")
+            img(src="img/diez.svg" alt="hashtag")
+            input(type="text" maxlength="6" value="212121", onblur="changeColor(this);")
     .row
       .col.s8.offset-s2.np.typetester
         textarea() Click to try Gotham !

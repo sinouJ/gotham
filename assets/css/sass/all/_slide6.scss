@@ -24,15 +24,44 @@
 
           >li {
             position: relative;
-            
+            cursor: pointer;
+
+            &:first-child {
+              img {
+                left: auto;
+                right: 10%;
+              }
+            }
+
+            img {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 0;
+              max-width: 100%;
+            }
+
             &:not(.dropdown) {
               max-width: 120px;
             }
             &.dropdown {
               width: 200px;
               position: relative;
-              text-align: center;
               border-bottom: 3px solid $black;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              ion-icon {
+                position: absolute;
+                right: 10%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 25px;
+                width: 25px;
+                transform-origin: center;
+                transition: transform 0.3s ease;
+              }
             }
 
             input {
