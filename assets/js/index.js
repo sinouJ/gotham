@@ -18,40 +18,40 @@ var swiper = new Swiper('.swiper-container', {
     },
     transitionStart: function() {
       var slide = document.querySelector('.swiper-slide-active');
-      if (slide.getAttribute('data-ref') == '4') {
-        document.getElementById('line1').style.opacity = '1';
-        setTimeout(function() {
-          document.getElementById('line2').style.opacity = '1';
-        }, 200);
-        setTimeout(function() {
-          document.getElementById('line3').style.opacity = '1';
-        }, 400);
-        setTimeout(function() {
-          document.getElementById('line4').style.opacity = '1';
-        }, 550);
-        setTimeout(function() {
-          document.getElementById('line5').style.opacity = '1';
-        }, 700);
-        setTimeout(function() {
-          document.getElementById('line6').style.opacity = '1';
-        }, 800);
-        setTimeout(function() {
-          document.getElementById('line7').style.opacity = '1';
-        }, 850);
-        setTimeout(function() {
-          document.getElementById('line8').style.opacity = '1';
-        }, 880);
-      }
-      else {
-        document.getElementById('line1').style.opacity = '0';
-        document.getElementById('line2').style.opacity = '0';
-        document.getElementById('line3').style.opacity = '0';
-        document.getElementById('line4').style.opacity = '0';
-        document.getElementById('line5').style.opacity = '0';
-        document.getElementById('line6').style.opacity = '0';
-        document.getElementById('line7').style.opacity = '0';
-        document.getElementById('line8').style.opacity = '0';
-      }
+      // if (slide.getAttribute('data-ref') == '4') {
+      //   document.getElementById('line1').style.opacity = '1';
+      //   setTimeout(function() {
+      //     document.getElementById('line2').style.opacity = '1';
+      //   }, 200);
+      //   setTimeout(function() {
+      //     document.getElementById('line3').style.opacity = '1';
+      //   }, 400);
+      //   setTimeout(function() {
+      //     document.getElementById('line4').style.opacity = '1';
+      //   }, 550);
+      //   setTimeout(function() {
+      //     document.getElementById('line5').style.opacity = '1';
+      //   }, 700);
+      //   setTimeout(function() {
+      //     document.getElementById('line6').style.opacity = '1';
+      //   }, 800);
+      //   setTimeout(function() {
+      //     document.getElementById('line7').style.opacity = '1';
+      //   }, 850);
+      //   setTimeout(function() {
+      //     document.getElementById('line8').style.opacity = '1';
+      //   }, 880);
+      // }
+      // else {
+      //   document.getElementById('line1').style.opacity = '0';
+      //   document.getElementById('line2').style.opacity = '0';
+      //   document.getElementById('line3').style.opacity = '0';
+      //   document.getElementById('line4').style.opacity = '0';
+      //   document.getElementById('line5').style.opacity = '0';
+      //   document.getElementById('line6').style.opacity = '0';
+      //   document.getElementById('line7').style.opacity = '0';
+      //   document.getElementById('line8').style.opacity = '0';
+      // }
       if (slide.getAttribute('data-ref') == '3') {
         var getUl = document.getElementById('listGeo');
         var getLi = getUl.querySelectorAll('li');
@@ -70,7 +70,7 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true
   },
-  initialSlide: 5,
+  initialSlide: 3,
   allowTouchMove: false
 });
 function toggleMenu() {

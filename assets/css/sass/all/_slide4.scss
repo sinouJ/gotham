@@ -1,12 +1,27 @@
 [data-ref="4"] {
-  svg {
+  // svg {
+  //   max-width: 100%;
+  //
+  //   @for $i from 1 through 8 {
+  //     #line#{$i} {
+  //       transition: opacity 0.8s ease;
+  //       opacity: 0;
+  //     }
+  //   }
+  // }
+  img {
     max-width: 100%;
-
-    @for $i from 1 through 8 {
-      #line#{$i} {
-        transition: opacity 0.8s ease;
-        opacity: 0;
-      }
+  }
+  > img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+  .col {
+    img {
+      max-height: 60vh;
+      position: absolute;
+      bottom: 15%;
     }
   }
 }
