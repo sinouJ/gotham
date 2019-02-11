@@ -48,11 +48,12 @@
         font-size: 0.9rem;
 
         a{
-          transition: all 1s ease;
+          transition: transform 0.7s ease;
           // transition-delay: 0.2s;
           padding: 20px 0;
           // width: 100%;
-          display: inline-block;
+          display: block;
+          width: 100%;
           cursor: pointer;
           text-decoration: underline;
           &:hover {
@@ -63,6 +64,7 @@
             &.anim {
               &-#{$i} {
                 transition-delay: 0.8s * 1 / $i;
+                transition-property: transform;
               }
             }
           }
