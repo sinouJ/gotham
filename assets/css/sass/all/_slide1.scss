@@ -60,7 +60,7 @@
       transition: transform 0.7s ease
     }
   }
-  p {
+  p:not(.typetester) {
     font-size: 0.9rem;
     line-height: 22px;
     text-indent: 40px;
