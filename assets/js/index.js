@@ -223,8 +223,16 @@ function openCard(elt) {
   var indexCard = elt.getAttribute('data-num');
   var cards = document.getElementsByClassName('card');
 
+  cards[indexCard].style.opacity = '1';
+  cards[indexCard].style.transform = 'translateY(0)';
   addClass(cards[indexCard], 'open');
 }
 function closeCard(elt) {
-  removeClass(elt.parentNode.parentNode, 'open')
+  var thisElt = elt.parentNode.parentNode;
+  thisElt.style.opacity = '0';
+  thisElt.style.transform = 'translateY(50px)';
+  setTimeout(function(){
+    removeClass(thisElt, 'open');
+  }, 500)
+
 }
