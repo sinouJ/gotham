@@ -32,11 +32,11 @@ html(lang="fr")
         span
         span
       .swiper-page-menu(data-stat='close')
-        - var n = 1
+        - var pages = ['Accueil', 'Terminaisons', 'Geometric', 'Graisses', 'Utilisations', 'Typetester']
         ul
-          while n < 7
+          each page, index in pages
             li
-              a(href="#", onclick="goTo(this);", data-num= n)= 'Page '+ n++
+              a(href="#", onclick="goTo(this);", data-num= index +1)= page
     script(src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js")
     script(type="text/javascript" src="swiper/swiper.min.js")
     script(type="text/javascript" src="js/index.js")

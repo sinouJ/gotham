@@ -44,7 +44,7 @@
     height: 44px;
     position: absolute;
     bottom: 12px;
-    left: 137px;
+    left: 152px;
     z-index: 22;
     cursor: pointer;
 
@@ -87,11 +87,12 @@
   .swiper-page-menu {
     position: absolute;
     bottom: -20px;
+    width: 190px;
     left: 75px;
     background-color: $white;
     box-shadow: $shadow;
     height: auto;
-    padding: 15px 50px 75px 50px;
+    padding: 15px 0 75px 0;
     z-index: 21;
     opacity: 0;
     visibility: hidden;
@@ -106,6 +107,7 @@
       display: block;
       margin-bottom: 5px;
       padding: 2px;
+      text-align: center;
 
       &:hover {
         text-decoration: underline;
