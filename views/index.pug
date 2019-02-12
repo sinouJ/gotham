@@ -6,7 +6,7 @@ html(lang="fr")
     link(rel="stylesheet" href="swiper/swiper.min.css")
     title Gotham
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
-  body
+  body(onload="card();")
     .swiper-container
       .swiper-wrapper
         .swiper-slide.valign-wrapper.centered(data-ref="1")
@@ -39,4 +39,5 @@ html(lang="fr")
               a(href="#", onclick="goTo(this);", data-num= index +1)= page
     script(src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js")
     script(type="text/javascript" src="swiper/swiper.min.js")
+    script(type="text/javascript" src="js/utils.js")
     script(type="text/javascript" src="js/index.js")

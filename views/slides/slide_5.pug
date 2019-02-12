@@ -4,9 +4,9 @@
   ul
     each i, index in grp1
       li.grp1
-        a(href="#", data-num= index)= i
+        a(href="#", data-num= index, onclick="openCard(this)")= i
   ul
     each i, index in grp2
       li.grp2
-        a(href="#", data-num= index)= i
+        a(href="#", data-num= index+grp1.length, onclick="openCard(this)")= i
 img(src="img/utilisation.svg", alt="utilisation")
