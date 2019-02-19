@@ -61,7 +61,7 @@ var swiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true
   },
-  initialSlide: 4,
+  initialSlide: 0,
   allowTouchMove: false
 });
 function toggleMenu() {
