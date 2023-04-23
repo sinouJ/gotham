@@ -3,12 +3,16 @@
 
 ## Installation
 
-Node version: 8.11.2
+Node version: `18.x`
 
-- `npm i package`
-- `nodemon`
-- `localhost:3000`
+```
+> npm i
+> nodemon
+```
 
 ## Dev
 
-To run gulp: `gulp`
+```
+> npm i -g gulp
+> gulp
+```
