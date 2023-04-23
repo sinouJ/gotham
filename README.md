@@ -1,3 +1,6 @@
+# Gotham
+[View website](https://sinouj.github.io/gotham/)
+
 ## Installation
 
 Node version: 8.11.2
