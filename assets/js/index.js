@@ -201,16 +201,16 @@ function changeColor(elt) {
 }
 function card() {
   var cards = [
-    {img: "img/imgCard/twitter.jpg", title: "Twitter", description: "Gotham a remplacé Helvetica sur votre réseau social préféré le 30 mai 2014"},
-    {img: "img/imgCard/moonlight.jpg", title: "Moonlight Movie Poster", description: "Gotham a été utilisée pour faire les affiches sur célèbre film Moonlight racontant l'histoire d'un jeune afro américain essayant de vivre son homosexualité."},
-    {img: "img/imgCard/arte.jpg", title: "Arte Magazin", description: "Gotham est devenue la police utilisée par Arte. Ils l'utilisent essentiellement en capitales. Les graisses light, book et bold sont utilisées."},
-    {img: "img/imgCard/spectre.jpeg", title: "James Bond Spectre Movie Poster", description: "Gotham a été utilisée sur certaines affiches du film James Bond Spectre. La police a essentiellement servi à écrire le mot \"Spectre\" en lettres capitales."},
-    {img: "img/imgCard/obama.jpg", title: "Obama 2008", description: "Barack Obama a utilisé Gotham pour sa campagne présidentielle en 2008. On reconnaîtra notamment la très célèbre affiche \"HOPE\" conçue par Shepard Fairey."},
-    {img: "img/imgCard/starbucks.png", title: "Starbucks Coffee", description: "Starbucks a utilisé Gotham pour la packaging de plusieurs de ses produits. La police est utilisée principalement pour des sous-titres qui décrivent le produit."},
-    {img: "img/imgCard/netflix.png", title: "Netflix", description: "Netflix utilisait Gotham avant de créer sa propre police pour des raisons financières"},
-    {img: "img/imgCard/spotify.png", title: "Spotify", description: "Le logo Spotify a été créé avec la typo Gotham avec un point rond et une ligature entre le f et le y"},
-    {img: "img/imgCard/logoMCFC.svg", title: "Manchester City écusson", description: "Nouveau logo dévoilé en décembre 2015 visant à moderniser l’écusson du club tout en se rapprochant de l’écusson « classique »"},
-    {img: "img/imgCard/gq.jpg", title: "GQ Magazine", description: "GQ était le commanditaire de la police Gotham, elle a été créée pour ce Magazine en 2000 par Tobias Frere-Jones"}
+    {img: "./assets/img/imgCard/twitter.jpg", title: "Twitter", description: "Gotham a remplacé Helvetica sur votre réseau social préféré le 30 mai 2014"},
+    {img: "./assets/img/imgCard/moonlight.jpg", title: "Moonlight Movie Poster", description: "Gotham a été utilisée pour faire les affiches sur célèbre film Moonlight racontant l'histoire d'un jeune afro américain essayant de vivre son homosexualité."},
+    {img: "./assets/img/imgCard/arte.jpg", title: "Arte Magazin", description: "Gotham est devenue la police utilisée par Arte. Ils l'utilisent essentiellement en capitales. Les graisses light, book et bold sont utilisées."},
+    {img: "./assets/img/imgCard/spectre.jpeg", title: "James Bond Spectre Movie Poster", description: "Gotham a été utilisée sur certaines affiches du film James Bond Spectre. La police a essentiellement servi à écrire le mot \"Spectre\" en lettres capitales."},
+    {img: "./assets/img/imgCard/obama.jpg", title: "Obama 2008", description: "Barack Obama a utilisé Gotham pour sa campagne présidentielle en 2008. On reconnaîtra notamment la très célèbre affiche \"HOPE\" conçue par Shepard Fairey."},
+    {img: "./assets/img/imgCard/starbucks.png", title: "Starbucks Coffee", description: "Starbucks a utilisé Gotham pour la packaging de plusieurs de ses produits. La police est utilisée principalement pour des sous-titres qui décrivent le produit."},
+    {img: "./assets/img/imgCard/netflix.png", title: "Netflix", description: "Netflix utilisait Gotham avant de créer sa propre police pour des raisons financières"},
+    {img: "./assets/img/imgCard/spotify.png", title: "Spotify", description: "Le logo Spotify a été créé avec la typo Gotham avec un point rond et une ligature entre le f et le y"},
+    {img: "./assets/img/imgCard/logoMCFC.svg", title: "Manchester City écusson", description: "Nouveau logo dévoilé en décembre 2015 visant à moderniser l’écusson du club tout en se rapprochant de l’écusson « classique »"},
+    {img: "./assets/img/imgCard/gq.jpg", title: "GQ Magazine", description: "GQ était le commanditaire de la police Gotham, elle a été créée pour ce Magazine en 2000 par Tobias Frere-Jones"}
   ];
   var slide5 = document.querySelector('.swiper-slide[data-ref=\'5\']');
 

@@ -1,5 +1,5 @@
 [data-ref="1"] {
-  >.row {
+  > .row {
     z-index: 1;
   }
   .typetest {
@@ -8,7 +8,8 @@
 
     ion-icon {
       position: absolute;
-      top: 0;bottom: 0;
+      top: 0;
+      bottom: 0;
       margin: auto 0;
     }
   }
@@ -42,22 +43,24 @@
     .row {
       &.firstP {
         transform: translateX(0);
-        transition-delay: 0.2s
+        transition-delay: 0.2s;
       }
       &.secondP {
         transform: translateX(0);
-        transition-delay: 0.3s
+        transition-delay: 0.3s;
       }
       &.thirdP {
         transform: translateX(0);
-        transition-delay: 0.37s
+        transition-delay: 0.37s;
       }
     }
   }
   .row {
-    &.firstP, &.secondP, &.thirdP {
+    &.firstP,
+    &.secondP,
+    &.thirdP {
       transform: translateX(15%);
-      transition: transform 0.7s ease
+      transition: transform 0.7s ease;
     }
   }
   p:not(.typetester) {
@@ -69,7 +72,7 @@
       margin-bottom: 30px;
     }
     &.mB45 {
-      margin-bottom: 45px
+      margin-bottom: 45px;
     }
   }
 }

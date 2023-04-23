@@ -3,9 +3,9 @@
 $nb_col: 12;
 
 .col {
-  @for $i from 1 through $nb_col{
+  @for $i from 1 through $nb_col {
     &.s#{$i} {
-      width: (100% / $nb_col) * $i;
+      width: calc((100% / $nb_col) * $i);
       float: left;
       padding-left: 20px;
       padding-right: 20px;
@@ -13,15 +13,15 @@ $nb_col: 12;
     }
   }
 
-  @for $i from 1 through $nb_col{
+  @for $i from 1 through $nb_col {
     &.offset-s#{$i} {
-      margin-left: (100% / $nb_col) * $i !important;
+      margin-left: calc((100% / $nb_col) * $i) !important;
     }
   }
   @media (min-width: $small) {
-    @for $i from 1 through $nb_col{
+    @for $i from 1 through $nb_col {
       &.m#{$i} {
-        width: (100% / $nb_col) * $i;
+        width: calc((100% / $nb_col) * $i);
         float: left;
         padding-left: 20px;
         padding-right: 20px;
@@ -29,18 +29,17 @@ $nb_col: 12;
       }
     }
 
-    @for $i from 1 through $nb_col{
+    @for $i from 1 through $nb_col {
       &.offset-m#{$i} {
-        margin-left: (100% / $nb_col) * $i !important;
+        margin-left: calc((100% / $nb_col)) * $i !important;
       }
     }
   }
 
-
   @media (min-width: $medium) {
-    @for $i from 1 through $nb_col{
+    @for $i from 1 through $nb_col {
       &.l#{$i} {
-        width: (100% / $nb_col) * $i;
+        width: calc((100% / $nb_col) * $i);
         float: left;
         padding-left: 20px;
         padding-right: 20px;
@@ -48,17 +47,17 @@ $nb_col: 12;
       }
     }
 
-    @for $i from 1 through $nb_col{
+    @for $i from 1 through $nb_col {
       &.offset-l#{$i} {
-        margin-left: (100% / $nb_col) * $i !important;
+        margin-left: calc((100% / $nb_col) * $i) !important;
       }
     }
   }
 
   @media (min-width: $large) {
-    @for $i from 1 through $nb_col{
+    @for $i from 1 through $nb_col {
       &.xl#{$i} {
-        width: (100% / $nb_col) * $i;
+        width: calc((100% / $nb_col) * $i);
         float: left;
         padding-left: 20px;
         padding-right: 20px;
@@ -66,28 +65,28 @@ $nb_col: 12;
       }
     }
 
-    @for $i from 1 through $nb_col{
+    @for $i from 1 through $nb_col {
       &.offset-xl#{$i} {
-        margin-left: (100% / $nb_col) * $i !important;
+        margin-left: calc((100% / $nb_col) * $i) !important;
       }
     }
   }
 }
 
-.container{
+.container {
   width: 85%;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.row{
+.row {
   display: block;
   overflow: hidden;
   width: 100%;
   margin-bottom: 20px;
 
-  &::after{
+  &::after {
     content: "";
     clear: both;
   }

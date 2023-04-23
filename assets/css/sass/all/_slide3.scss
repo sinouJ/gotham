@@ -34,8 +34,8 @@
   }
 
   align-items: flex-start;
-  >.row {
-    >.col {
+  > .row {
+    > .col {
       position: absolute;
       bottom: calc(175px + 10%);
     }
@@ -44,10 +44,10 @@
     li {
       // transition: margin 0.5s ease;
       // margin-left: 200px;
-      p{
+      p {
         font-size: 0.9rem;
 
-        a{
+        a {
           transition: transform 0.7s ease;
           // transition-delay: 0.2s;
           padding: 20px 0;
@@ -63,7 +63,7 @@
           @for $i from 1 through 8 {
             &.anim {
               &-#{$i} {
-                transition-delay: 0.8s * 1 / $i;
+                transition-delay: calc(0.8s * 1 / $i);
                 transition-property: transform;
               }
             }
